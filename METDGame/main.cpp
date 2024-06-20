@@ -1,6 +1,3 @@
-// METDGame.cpp : Defines the entry point for the console application.
-//
-
 #include "stdafx.h"
 
 
@@ -113,7 +110,7 @@ DWORD WINAPI MonitorGameStatus(LPVOID lpParam) {
 			g_gameRunning = currentStatus;
 			InvalidateRect(hWnd, NULL, TRUE);
 		}
-		Sleep(1000); // Check every second
+		Sleep(1000);
 	}
 
 	return 0;
